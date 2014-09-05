@@ -17,6 +17,10 @@ public class Variables {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int i=0;
+        int num = 20;
+        System.out.println("The value of variable i is " + i);
+        System.out.println("The other value of variable num is " + num);
     }
     
 }
