@@ -35,6 +35,15 @@ public class Variables {
         * if one of the two side is not a number, but some text then java does not
         perform an addition
         */
+        
+        float myFloat = 2.56F;
+        //when creating a value in decimal you have to put a capital F at the end
+        short shortNumber = 43;
+        char myChar = 'B';
+        
+        System.out.println("Show my " + myFloat);
+        System.out.println("Show my " + shortNumber);
+        System.out.println("Show my " + myChar);
     }
     
 }
