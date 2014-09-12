@@ -19,8 +19,20 @@ public class Variables {
         // TODO code application logic here
         int i=0;
         int num = 20;
+        //* [."=" is the assignment operator and assigns the value 
+        //on the right hand sign and assign it to the variable in the left hand side
         
-        System.out.println("The value of variable i is " + i);
+        System.out.println("The value of variable i is \n" + i);
+        //back slash "\n" puts the value i on the next line
+        //the string is a bunch of chars stored together inside ""
+        //This is a string: "The value of variable i is \n"
+        //String + int is concatenation
+        System.out.println(num + 10);
+        System.out.println("The value of variable i is " +1 +"\nThe value of the second int num is " +num);
+        System.out.println("The values of i and num are: " +i +", " +num);
+        // ", " you have to use double quotes here because the space is a character
+        
+        
         
         i =-100;
         
@@ -40,6 +52,18 @@ public class Variables {
         //when creating a value in decimal you have to put a capital F at the end
         short shortNumber = 43;
         char myChar = 'B';
+        
+        int i2 =0;
+        
+        int sum = i + i2+ num;
+        int difference = i - i2;
+        int product = i2 * num;
+        int quotient = i / num;
+        //int quotient2 = num / i;
+        //This is a decimal, and INT will drop all the decimal places and contain the whole number
+        float quotient2 = num / i;
+        
+        System.out.println("Show values " +sum + ", " +difference + ", " +product + ", " +quotient + ", " +quotient2);
         
         System.out.println("Show my " + myFloat);
         System.out.println("Show my " + shortNumber);
