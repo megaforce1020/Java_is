@@ -6,7 +6,9 @@
 
 package classgame;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -68,6 +70,8 @@ public class ClassGame {
             name = console.nextLine();
             System.out.println("Your name is " +name);
             
+            stringToSave.append(name).append("\t").append(number).append("\n");
+            
         
         }
         //whenever you read some text after some number you need to do two .nextLine()
@@ -83,6 +87,16 @@ public class ClassGame {
         BufferedWriter outputBuff = new BufferedWriter(
                                         new FileWriter("outfile.txt", true));
         
+        String str = stringToSave.toString();
+        outputBuff.write(str);
+        
+        BufferedReader inputBuff = new BufferedReader(
+                                        new FileReader("outfile.txt"));
+        
+        String read ="";
+        while ((read = inputBuff.readLine())!=null) {
+            System.out.println("Entry from file: " +read);
+        }
         
     }
     
