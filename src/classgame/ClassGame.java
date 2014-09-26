@@ -89,6 +89,7 @@ public class ClassGame {
         
         String str = stringToSave.toString();
         outputBuff.write(str);
+        outputBuff.flush();
         
         BufferedReader inputBuff = new BufferedReader(
                                         new FileReader("outfile.txt"));
@@ -96,6 +97,8 @@ public class ClassGame {
         String read ="";
         while ((read = inputBuff.readLine())!=null) {
             System.out.println("Entry from file: " +read);
+            //test
+            
         }
         
     }
